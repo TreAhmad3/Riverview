@@ -1,0 +1,686 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Riverview Raw Bar</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- reset css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- moment.js for calender -->
+    <script src="assets/node_modules/moment/moment.js"></script>
+    <!-- underscore.js for calender -->
+    <script src="assets/node_modules/underscore/underscore-min.js"></script>
+
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- icons for materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="content">
+        <!-- NAVAGATION BAR -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Riverview Raw Bar</a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Music &#38; Events</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="tel:+17044120181"><i class="material-icons">call</i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Music &#38; Events</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="tel:+17044120181">Call Us!</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--START MAIN PAGE CONTENT -->
+
+        <!-- SLIDESHOW -->
+
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/imgs/img1.jpg">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/img2.jpg">
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/img3.jpg">
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/img4.jpg">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ABOUT / STORY SECTION -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div id="about" class="section center-align">
+                        <h2 class="header">Riverview Raw Bar &#38; Chill</h2>
+                        <p class="caption">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eleifend eleifend. Sed elementum sem sit amet
+                            orci interdum blandit. Pellentesque eros orci, eleifend sed justo vel, pharetra interdum dui.
+                            Vivamus blandit dignissim augue, ac ultricies orci fringilla in. Phasellus leo ipsum, ultricies
+                            eget malesuada sit amet, gravida ac tortor. Nam feugiat erat vel eros rhoncus, quis dapibus est
+                            suscipit. Phasellus eu interdum arcu, id elementum magna. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam imperdiet elit id imperdiet condimentum. Vivamus placerat dui elit, in
+                            scelerisque lorem accumsan tristique. Proin tincidunt orci sit amet erat dignissim, ac maximus
+                            dolor tristique. Cras est turpis, finibus eu rutrum et, interdum quis tellus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <!-- MENU -->
+        <div class="container">
+            <div class="row">
+                <h2 class="center-align">Menu</h2>
+            </div>
+            <div class="row">
+
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <!-- appetizers table -->
+                    <li>
+                        <div id="app" class="collapsible-header scrollspy">Appetizers</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Blackened Shrimp</td>
+                                        <td class="description">Cajun seasoned large shrimp</td>
+                                        <td>$10.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Peel &#38; Eat Shrimp</td>
+                                        <td class="description">Seasoned and served warm or cold</td>
+                                        <td>$10.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shrimp Cocktail</td>
+                                        <td class="description">Cold peeled shrimp with cocktail sauce in a martini glass</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quick Fried Calamari</td>
+                                        <td class="description">Hand breaded rings and tentacles with banana peppers served with marinara</td>
+                                        <td>$8.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drunken Mussels</td>
+                                        <td class="description">Black mussels sauteed in white wine &#38; garlic butter</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blackened Ribeye Bites</td>
+                                        <td class="description">5oz of Angus Ribeye with creamy horseraddish sauce</td>
+                                        <td>$10.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crab Cake</td>
+                                        <td class="description">Large Charleston style cake over mixed greens</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Seared Ahi Tuna</td>
+                                        <td class="description">Served rare with roy sauce, pickled ginger and wasabi</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steamed Little Neck Clams</td>
+                                        <td class="description">White wine butter sauce, green onion, tomatoes &#38; prosciutto</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baked Crab and Artichoke Dip</td>
+                                        <td class="description">Housemade with crispy pita points</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chips &#38;</td>
+                                        <td class="description">Salsa / Queso</td>
+                                        <td>$5.95 / $7.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nachos</td>
+                                        <td class="description">Chili or chicken, queso, lettuce, tomato, jalapenos, sour cream, and salsa (substitute
+                                            steak or shrimp +$3)</td>
+                                        <td>$8.95</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- sides table -->
+                    <li>
+                        <div id="sides" class="collapsible-header scrollspy">Sides</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>House Sides</td>
+                                        <td class="description">Honeymoon Fries, Hush Puppies, Yellow Grits, Rice Pilaf, Collard Greens, Smashed
+                                            Potatoes, Coleslaw, Green Beans, Vegetable Medley, Corn on the Cob</td>
+                                        <td>$2.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Premium Sides</td>
+                                        <td class="description">Seafood Mac n' Cheeese, Baked Potato, Loaded Smashed Potatoes</td>
+                                        <td>$3.95</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- wings table -->
+                    <li>
+                        <div id="wings" class="collapsible-header scrollspy">Wings</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Available Flavors</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Traditional</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charred</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- sandwiches and burgers -->
+                    <li>
+                        <div id="burgers" class="collapsible-header scrollspy">Sandwiches &#38; Burgers</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Po' Boy</td>
+                                        <td class="description">Coleslaw, tomato, caper remoulade on a hoagie bun (Fried shrimp / Fried oysters)</td>
+                                        <td>$9.95 / $11.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Buffalo Chicken Sandwich</td>
+                                        <td class="description">Crispy or grilled chicken breast rolled in hot or mild sauce, blue cheese crumbles
+                                            and sliced red onion</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flounder Sandwhich</td>
+                                        <td class="description">Crispy fried flounder filet, tarter sauce, lettuce and tomato on a butter toasted
+                                            bun
+                                        </td>
+                                        <td>$8.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Ribeye Sandwich</td>
+                                        <td class="description">6oz ribeye, grilled mushrooms and onions on a butter toasted bun with lettuce, tomato,
+                                            and spicy horseradish sauce</td>
+                                        <td>$12.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crab Cake BLT</td>
+                                        <td class="description">Crispy crab cake toasted bun with bacon, lettuce, tomato and caper remoulade</td>
+                                        <td>$10.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Philly Cheesesteak</td>
+                                        <td class="description">Shaved ribeye, grilled onions and mushrooms with gooey white cheese sauce on a hoagie</td>
+                                        <td>$11.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chicken Parmesan</td>
+                                        <td class="description">Crispy chicken breast covered with marinara sauce and melted mozzarella cheese</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shrimp Burger</td>
+                                        <td class="description">Grilled shrimp patty with red pepper remoulade, lettuce, tomato and onion on toasted
+                                            bread
+                                        </td>
+                                        <td>$10.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Meatloaf Sandwich</td>
+                                        <td class="description">Homemade meatloaf with tasso ham gravy and grilled onions on a butter toasted bun</td>
+                                        <td>$9.95</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong><u>Grilled Burgers and Chicken Sandwiches</u></strong></td>
+                                        <td class="description"><strong>*Angus beef patty or grilled chicken breast in any style below on a butter toasted bun</strong></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Classic Style</td>
+                                        <td class="description">American cheese, lettuce, tomato and onion</td>
+                                        <td>$8.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carolina Style</td>
+                                        <td class="description">Chili, slaw, mustard and chopped onion</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pimento Style</td>
+                                        <td class="description">Pimento cheese, bacon, lettuce, tomato and onion</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Club Style</td>
+                                        <td class="description">Bacon, lettuce, tomato, Swiss and American cheese</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mushmouth Style</td>
+                                        <td class="description">Grilled mushrooms, bacon, Swiss, lettuce, tomato and onion</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Breakfast Style</td>
+                                        <td class="description">Fried egg, bacon, American cheese, lettuce, tomato and onion</td>
+                                        <td>$9.95</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- salads -->
+                    <li>
+                        <div id="salads" class="collapsible-header scrollspy">Salads</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- seafood platters -->
+                    <li>
+                        <div id="seafood" class="collapsible-header scrollspy">Seafood Platters</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- tacos and quesadillas -->
+                    <li>
+                        <div id="tacos" class="collapsible-header scrollspy">Tacos &#38; Quesadillas</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- entees -->
+                    <li>
+                        <div id="entrees" class="collapsible-header scrollspy">Entrees</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- kids menu -->
+                    <li>
+                        <div id="kids-menu" class="collapsible-header scrollspy">For the Little Ones</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- drinks -->
+                    <li>
+                        <div id="drinks" class="collapsible-header scrollspy">Drinks</div>
+                        <div class="collapsible-body">
+                            <table class="centered striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Item Description</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Served with celery and choice of dressing</td>
+                                        <td>$6.95 (6) / $11.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Traditional wings, sauced then charred on a hot grill and also served with celery
+                                            and choice of dressing</td>
+                                        <td>$7.95 (6) / $12.95 (12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBT</td>
+                                        <td class="description">Hot, Mild, Honey Hot, Sweet BBQ, Barbalo, Teriyaki, Lemon Pepper Seasoning</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <!-- end of menu container -->
+
+        <div class="divider"></div>
+
+        <!-- Calendar -->
+        <div class="container">
+            <div id="calendar" class="clearfix">
+                <script type="text/template" id="template-calendar">
+                    <div class="clndr-controls">
+                        <div class="clndr-previous-button">&lsaquo;</div>
+                        <div class="month">
+                            <%= intervalStart.format('M/DD') + ' &mdash; ' + intervalEnd.format('M/DD') %>
+                        </div>
+                        <div class="clndr-next-button">&rsaquo;</div>
+                    </div>
+                    <div class="clndr-grid">
+                        <div class="days-of-the-week">
+                            <% _.each(daysOfTheWeek, function(day) { %>
+                                <div class="header-day">
+                                    <%= day %>
+                                </div>
+                                <% }); %>
+                                    <div class="days">
+                                        <% _.each(days, function(day) { %>
+                                            <div class="<%= day.classes %>">
+                                                <%= day.day %>
+                                            </div>
+                                            <% }); %>
+                                    </div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Location</h5>
+                        <p>10012 Moores Chapel Loop Charlotte, NC 28214</p>
+                        <!-- add google maps like the original website -->
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Hours</h5>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div>Sunday
+                                    <div class="secondary-content">4PM-10PM</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Monday
+                                    <div class="secondary-content">CLOSED</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Tuesday
+                                    <div class="secondary-content">4PM-10PM</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Wednesday
+                                    <div class="secondary-content">4PM-10PM</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Thursday
+                                    <div class="secondary-content">4PM-10PM</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Friday
+                                    <div class="secondary-content">4PM-12AM</div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Saturday
+                                    <div class="secondary-content">4PM-12AM</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">*add social media here*</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- compiled and minified jquery *must be before materialize.min.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- clndr.js for calender -->
+    <script src="assets/node_modules/clndr/src/clndr.js"></script>
+    <script src="assets/js/calendar.js"></script>
+    <!-- materialize javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- external materialize javascript/jquery -->
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+    margin:0 auto;
+}
+#content  {
+    height:100%;
+    width:100%;
+}
+
+.brand-logo {
+    margin-left:1em;
+}
+
+#sidenav-overlay {
+    z-index: 996;
+}
+
+.description {
+    padding:3em;
+    font-style:italic;
+}
+
+.clndr-controls {
+    display: block;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3px;
+}
