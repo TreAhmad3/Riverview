@@ -3,7 +3,6 @@
 
 <head>
     <title>Riverview Raw Bar</title>
-
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,13 +12,14 @@
     <script src="assets/node_modules/moment/moment.js"></script>
     <!-- underscore.js for calender -->
     <script src="assets/node_modules/underscore/underscore-min.js"></script>
-
     <!-- MATERIALIZE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- icons for materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- font awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -33,10 +33,10 @@
 
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="home.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Music &#38; Events</a></li>
-                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#events">Music &#38; Events</a></li>
+                        <li><a href="#discounts">Discounts</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="tel:+17044120181"><i class="material-icons">call</i></a></li>
                     </ul>
@@ -95,10 +95,10 @@
 
         <!-- ABOUT / STORY SECTION -->
         <div class="container">
-            <div class="row">
+            <div class="row" id="about">
                 <div class="col s12 m12 l12">
-                    <div id="about" class="section center-align">
-                        <h2 class="header">Riverview Raw Bar &#38; Chill</h2>
+                    <div class="section center-align">
+                        <h2 class="header"><br/>Riverview Raw Bar &#38; Chill</h2>
                         <p class="caption">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eleifend eleifend. Sed elementum sem sit amet
                             orci interdum blandit. Pellentesque eros orci, eleifend sed justo vel, pharetra interdum dui.
@@ -118,7 +118,7 @@
         <!-- MENU -->
         <div class="container">
             <div class="row">
-                <h2 class="center-align">Menu</h2>
+                <h2 class="center-align" id="menu">Menu</h2>
             </div>
             <div class="row">
 
@@ -576,39 +576,45 @@
 
         <div class="divider"></div>
 
+
         <!-- Calendar -->
+        <div class="row">
+            <h2 class="center-align" id="events">Music and Events</h2>
+        </div>
+
+        
         <div class="container">
-            <div id="calendar" class="clearfix">
-                <script type="text/template" id="template-calendar">
-                    <div class="clndr-controls">
-                        <div class="clndr-previous-button">&lsaquo;</div>
-                        <div class="month">
-                            <%= intervalStart.format('M/DD') + ' &mdash; ' + intervalEnd.format('M/DD') %>
-                        </div>
-                        <div class="clndr-next-button">&rsaquo;</div>
-                    </div>
-                    <div class="clndr-grid">
-                        <div class="days-of-the-week">
-                            <% _.each(daysOfTheWeek, function(day) { %>
-                                <div class="header-day">
-                                    <%= day %>
-                                </div>
-                                <% }); %>
-                                    <div class="days">
-                                        <% _.each(days, function(day) { %>
-                                            <div class="<%= day.classes %>">
-                                                <%= day.day %>
-                                            </div>
-                                            <% }); %>
-                                    </div>
-                        </div>
-                    </div>
-                </script>
+            <div class="calendar">
+
             </div>
         </div>
 
+        <script type="text/template" id="#template-calendar">
 
+        </script>
 
+        <div class="divider"></div>
+        
+        <!-- Discount Card -->
+        <div class="row">
+            <h2 class="center-align" id="discounts">Discounts</h2>
+        </div>
+        <div class="row">
+            <div class="col l4 .hide-on-med-and-down">
+
+            </div>
+            <div class="col s12 l4 center-align">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <h5>Want $20 off your next tab?</h5>
+                        <p><strong>text <span style="color:blue;">OYSTER</span> to 94253</strong></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col l4 .hide-on-med-and-down">
+
+            </div>
+        </div>
 
         <!-- FOOTER -->
         <footer class="page-footer">
@@ -662,9 +668,11 @@
                 </div>
             </div>
             <div class="footer-copyright">
+                <span class="copyright"> © 2017 Copyright Text </span>
                 <div class="container">
-                    © 2017 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">*add social media here*</a>
+                    
+                    <div class="grey-text text-lighten-4 right"><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a></div>
                 </div>
             </div>
         </footer>
