@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- custom css for calendar -->
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css" />
     <!-- font awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,7 +28,7 @@
     <div id="content">
         <!-- NAVAGATION BAR -->
         <div class="navbar-fixed">
-            <nav>
+            <nav class="indigo darken-3">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Riverview Raw Bar</a>
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -59,16 +61,11 @@
         <div class="slider">
             <ul class="slides">
                 <li>
-                    <img src="assets/imgs/img1.jpg">
-                    <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
+                    <!-- logo image -->
+                    <img src="assets/imgs/img1.png"> 
                 </li>
                 <li>
                     <img src="assets/imgs/img2.jpg">
-                    <!-- random image -->
                     <div class="caption left-align">
                         <h3>Left Aligned Caption</h3>
                         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -76,7 +73,6 @@
                 </li>
                 <li>
                     <img src="assets/imgs/img3.jpg">
-                    <!-- random image -->
                     <div class="caption right-align">
                         <h3>Right Aligned Caption</h3>
                         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -84,7 +80,6 @@
                 </li>
                 <li>
                     <img src="assets/imgs/img4.jpg">
-                    <!-- random image -->
                     <div class="caption center-align">
                         <h3>This is our big Tagline!</h3>
                         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -585,13 +580,13 @@
         
         <div class="container">
             <div class="calendar">
-
+                <script type="text/template" id="#template-calendar">
+                    <div class="events-list"> <% _.each(eventsThisMonth, function(event) { %> <div class="event eventday" id="event-<%=moment(event.date).format('YYYY-MM-DD')%>"> <a href="<%= event.location %>"><%= moment(event.date).format('DD/MM') %> - <%= event.title %></a> </div> <% }); %> </div>
+                </script>
             </div>
         </div>
 
-        <script type="text/template" id="#template-calendar">
-
-        </script>
+        
 
         <div class="divider"></div>
         
@@ -617,13 +612,14 @@
         </div>
 
         <!-- FOOTER -->
-        <footer class="page-footer">
+        <footer class="page-footer indigo accent-2">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text">Location</h5>
-                        <p>10012 Moores Chapel Loop Charlotte, NC 28214</p>
+                        <!--<a href="https://goo.gl/maps/8HF3EW8op6m"><p>10012 Moores Chapel Loop Charlotte, NC 28214</p></a>-->
                         <!-- add google maps like the original website -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.3883844057514!2d-81.00714868530925!3d35.246592361294326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856bd43e84195d3%3A0xa0c52d835883ef04!2sRiverview+Raw+Bar+%26+Chill!5e0!3m2!1sen!2sus!4v1494428941210" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Hours</h5>
@@ -667,12 +663,12 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
+            <div class="footer-copyright indigo darken-2">
                 <span class="copyright"> © 2017 Copyright Text </span>
                 <div class="container">
                     
-                    <div class="grey-text text-lighten-4 right"><a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a></div>
+                    <div class="grey-text text-lighten-4 right"><a href="https://www.facebook.com/riverviewrawbar" target="_blank" class="fa fa-facebook"></a>
+<a href="https://twitter.com/riverviewrawbar" target="_blank" class="fa fa-twitter"></a></div>
                 </div>
             </div>
         </footer>
